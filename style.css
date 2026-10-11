@@ -84,13 +84,6 @@ input:focus-visible {
   letter-spacing: -1px;
 }
 
-.wordmark span {
-  padding-left: 3px;
-  color: var(--sun);
-  font-family: var(--sans);
-  font-size: 16px;
-}
-
 .site-header nav,
 .footer-links {
   display: flex;
@@ -147,13 +140,6 @@ input:focus-visible {
   font-size: 14px;
   font-weight: 600;
   font-style: italic;
-}
-
-.hello-note span {
-  padding-left: 5px;
-  font-family: var(--sans);
-  font-size: 13px;
-  font-style: normal;
 }
 
 h1,
@@ -241,14 +227,6 @@ h1 span {
 
 .little-note li::marker {
   color: var(--accent);
-}
-
-.little-note-star {
-  position: absolute;
-  top: 11px;
-  right: 14px;
-  color: var(--sun);
-  font-size: 14px;
 }
 
 .note-doodle {
@@ -515,14 +493,6 @@ h2 > span {
   font-size: 7px;
 }
 
-.project-note-doodle {
-  position: absolute;
-  right: 15px;
-  bottom: 8px;
-  color: #839076;
-  font-size: 20px;
-}
-
 .about-section {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -546,7 +516,7 @@ h2 > span {
 }
 
 .about-details p,
-.education-note > span:not(.education-spark) {
+.education-note > span {
   display: block;
   margin-bottom: 13px;
   color: #6d675e;
@@ -569,13 +539,6 @@ h2 > span {
   background: #f5f0df;
 }
 
-.education-spark {
-  position: absolute;
-  top: 9px;
-  right: 12px;
-  color: var(--accent);
-}
-
 .education-note p {
   margin-bottom: 6px;
   color: #37332e;
@@ -584,7 +547,7 @@ h2 > span {
   font-weight: 600;
 }
 
-.education-note > span:not(.education-spark) {
+.education-note > span {
   margin-bottom: 8px;
   font-size: 9px;
 }
