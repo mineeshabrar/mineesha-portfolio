@@ -15,13 +15,14 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="wordmark" href="#top">mineesha</a>
+      <a class="wordmark" href="#top" aria-label="Mineesha Brar, home">MB</a>
       <nav aria-label="Main navigation">
         <a href="#work">Work</a>
-        <a href="#about">A bit about me</a>
-        <a href="#letter">Cover letter</a>
+        <a href="#project">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="header-link" href="mailto:mineesha6644@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+      <a class="header-link" href="mailto:mineesha6644@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
     </header>
 
     <main id="main">
@@ -30,14 +31,14 @@
           <p class="hello-note">Hello there</p>
           <h1 id="intro-title">I’m Mineesha.<br><span>A problem solver by heart.</span></h1>
           <p class="intro-text">
-            I’m a backend engineer in Bengaluru. For the past 3+ years, I’ve
-            worked at PhonePe and JPMorganChase, building services and
-            automations used by real people every day.
+            I’m a backend engineer in Bengaluru with 3+ years of experience at
+            PhonePe and JPMorganChase. I build reliable distributed services,
+            high-scale insurance journeys, and tools that make engineering
+            teams more effective.
           </p>
           <p class="intro-text">
-            I like the puzzle of making software faster and more dependable —
-            and I’m happiest when a tricky system becomes a little simpler
-            for the people using it.
+            I enjoy solving hard problems, improving performance, and making
+            complex systems simpler and more dependable.
           </p>
           <div class="intro-links">
             <a class="underlined-link" href="#work">A few things I’ve worked on <span aria-hidden="true">↓</span></a>
@@ -46,15 +47,6 @@
             <a class="underlined-link" href="https://leetcode.com/u/ppikachuu/" target="_blank" rel="noreferrer">LeetCode <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <aside class="little-note" aria-label="Professional strengths">
-          <p>My strengths</p>
-          <ul>
-            <li>Distributed systems</li>
-            <li>Java &amp; Spring Boot</li>
-            <li>Clean, reliable code</li>
-          </ul>
-          <span class="note-doodle" aria-hidden="true">↗</span>
-        </aside>
         <div class="intro-bottom">
           <span>BENGALURU, INDIA</span>
           <a href="mailto:mineesha6644@gmail.com">mineesha6644@gmail.com</a>
@@ -64,8 +56,12 @@
       <section class="work-section" id="work" aria-labelledby="work-title">
         <div class="section-wrap">
           <div class="section-heading">
-            <p class="eyebrow">A few chapters so far</p>
-            <h2 id="work-title">Things I’ve worked on<span>:</span></h2>
+            <p class="eyebrow">Experience</p>
+            <h2 id="work-title">Building systems that make a difference.</h2>
+            <p class="section-summary">
+              Backend engineering across high-scale insurance, distributed
+              services, and tools that help teams move faster.
+            </p>
           </div>
 
           <article class="job">
@@ -73,12 +69,22 @@
               <div>
                 <p class="job-company">PhonePe</p>
                 <h3>Software Engineer <span>— Backend</span></h3>
+                <ul class="job-skills" aria-label="Key technologies">
+                  <li>Java</li>
+                  <li>Aerospike</li>
+                  <li>MySQL</li>
+                  <li>Microservices</li>
+                  <li>Elasticsearch</li>
+                  <li>HBase</li>
+                  <li>OpenTSDB</li>
+                  <li>Dropwizard</li>
+                </ul>
               </div>
               <p class="job-dates">Aug 2025 — now<br>Bengaluru</p>
             </div>
             <p class="job-intro">
-              I work on insurance products and the backend systems behind
-              their quote and payment journeys.
+              Building and improving backend services across insurance quote
+              and payment journeys.
             </p>
             <ul class="job-details">
               <li>
@@ -98,12 +104,16 @@
                 down by <strong>50%</strong> (3.5 s to under 1.5 s).
               </li>
               <li>
-                Also worked on asynchronous payment schedules, Aerospike
-                caching, and personalized in-app rankings that increased
-                journey-to-payment conversion by <strong>15%</strong>.
+                Added an asynchronous MySQL payment-schedule store and
+                Aerospike caching to reduce reliance on slow insurer APIs and
+                eliminate recurring timeout failures.
+              </li>
+              <li>
+                Built a rule-driven personalization engine for product
+                rankings and callouts, increasing journey-to-payment
+                conversion by <strong>15%</strong>.
               </li>
             </ul>
-            <p class="job-tools">Java · Aerospike · MySQL · Microservices</p>
           </article>
 
           <article class="job">
@@ -111,31 +121,44 @@
               <div>
                 <p class="job-company">JPMorganChase</p>
                 <h3>Software Engineer <span>— Full Stack</span></h3>
+                <ul class="job-skills" aria-label="Key technologies">
+                  <li>Kafka</li>
+                  <li>C# / .NET</li>
+                  <li>Java</li>
+                  <li>React</li>
+                  <li>Microsoft Graph APIs</li>
+                  <li>LDAP</li>
+                  <li>Hangfire</li>
+                </ul>
               </div>
               <p class="job-dates">Aug 2023 — Aug 2025<br>Bengaluru</p>
             </div>
             <p class="job-intro">
-              I built internal tools that made incident response and
-              engineering operations less manual.
+              Delivered internal tools and workflow automation for
+              engineering operations and incident response.
             </p>
             <ul class="job-details">
               <li>
-                Created a Kafka notification pipeline for CI/CD and pull
-                request alerts, saving developers <strong>10+ hours each
-                week</strong>.
+                Built an event-driven Kafka pipeline for real-time CI/CD and
+                pull request alerts, saving developers <strong>10+ hours
+                each week</strong>.
               </li>
               <li>
-                Made priority-based Microsoft Teams incident rooms with
-                automatic context summaries, reducing context-gathering time
-                by <strong>90%</strong>.
+                Dynamically provisioned priority-based Microsoft Teams
+                incident rooms with context summaries, reducing
+                context-gathering time by <strong>90%</strong>.
               </li>
               <li>
-                Automated drive mapping and CSV validations, then built an
-                access-certification workflow covering <strong>50k+ shared
-                drives</strong>.
+                Built an LDAP-integrated drive-mapping web app with retryable
+                Hangfire jobs, automating 2,000-record CSV validation and
+                failure alerts to save <strong>4 hours a week</strong>.
+              </li>
+              <li>
+                Built a shared-drive certification workflow for
+                <strong>50k+ drives</strong>, including follow-ups and
+                automatic revocation of non-compliant access.
               </li>
             </ul>
-            <p class="job-tools">Kafka · C# · .NET Core · LDAP · Hangfire</p>
           </article>
 
           <article class="job job-last">
@@ -143,124 +166,134 @@
               <div>
                 <p class="job-company">JPMorganChase</p>
                 <h3>Software Engineer Intern</h3>
+                <ul class="job-skills" aria-label="Key technologies">
+                  <li>Python</li>
+                  <li>Release automation</li>
+                </ul>
               </div>
               <p class="job-dates">Jan 2022 — Jul 2022<br>Bengaluru</p>
             </div>
             <p class="job-intro">
-              Wrote a Python tool to compare release runs and email validation
-              results, cutting down manual testing.
+              Automated post-workflow release validation and email reporting
+              in Python, highlighting differences between runs and reducing
+              manual testing.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="project-section" aria-labelledby="project-title">
-        <div class="section-wrap project-layout">
-          <div>
-            <p class="eyebrow">A side project</p>
-            <h2 id="project-title">A little AI<br>knowledge helper.</h2>
-            <p class="project-summary">
-              I built a personal knowledge assistant that lets you add notes
-              and documents, then ask questions about what you’ve saved. It
-              finds relevant passages and includes them with the answer, so
-              you can check where it came from.
+      <section class="project-section" id="project" aria-labelledby="project-title">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <p class="eyebrow">Selected projects</p>
+            <h2 id="project-title">Ideas, built into working software.</h2>
+            <p class="section-summary">
+              A couple of projects exploring grounded AI and event-driven
+              communication.
             </p>
-            <p class="project-tools">Python · FastAPI · Sentence Transformers · FAISS · Ollama</p>
-            <a class="underlined-link" href="https://github.com/mineeshabrar/ai-knowledge-assistant" target="_blank" rel="noreferrer">
-              Have a look at the code <span aria-hidden="true">↗</span>
-            </a>
           </div>
-          <div class="project-note" aria-label="Example of a question and grounded answer">
-            <p class="project-note-label">A question for your notes</p>
-            <p class="question">“When does the launch happen?”</p>
-            <div class="answer">
-              <span>From your saved notes</span>
-              <p>The launch is planned for June <b>[1]</b>.</p>
-              <small>[1] Project decisions.txt</small>
-            </div>
+          <div class="project-grid">
+            <article class="project-card project-card-rag">
+              <div class="project-visual project-visual-rag" aria-hidden="true">
+                <span class="visual-label">EXAMPLE · ASK YOUR KNOWLEDGE BASE</span>
+                <div class="visual-question">What did I save about the launch?</div>
+                <div class="visual-answer">
+                  <span>ANSWER · WITH SOURCES</span>
+                  <p>It’s planned for June <b>[1]</b>.</p>
+                  <small>[1] Example note.md</small>
+                </div>
+              </div>
+              <div class="project-card-content">
+                <p class="project-type">AI · RETRIEVAL-AUGMENTED GENERATION</p>
+                <h3>AI Knowledge Assistant</h3>
+                <p>
+                  A local-first app for asking questions about your own notes
+                  and documents. It retrieves relevant passages, cites its
+                  sources, and says when the available context isn’t enough.
+                </p>
+                <p class="project-tools">Python · FastAPI · Sentence Transformers · FAISS · Ollama</p>
+                <a class="project-link" href="https://github.com/mineeshabrar/ai-knowledge-assistant" target="_blank" rel="noreferrer">
+                  Explore the project <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card project-card-kafka">
+              <div class="project-visual project-visual-kafka" aria-hidden="true">
+                <span class="visual-label">EVENT FLOW</span>
+                <div class="event-node">Go producer</div>
+                <span class="event-arrow">→</span>
+                <div class="event-topic">Kafka · notifications</div>
+                <span class="event-arrow">→</span>
+                <div class="event-node">Go consumer</div>
+                <span class="event-status">Message received</span>
+              </div>
+              <div class="project-card-content">
+                <p class="project-type">EVENT-DRIVEN · MESSAGING</p>
+                <h3>Kafka Notifications</h3>
+                <p>
+                  An event-driven messaging demo with separate Go producer
+                  and consumer services publishing to and receiving
+                  notifications from an Apache Kafka topic.
+                </p>
+                <p class="project-tools">Go · Apache Kafka · Sarama</p>
+                <a class="project-link" href="https://github.com/mineeshabrar/notifications-kafka-golang" target="_blank" rel="noreferrer">
+                  Explore the project <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
         <div>
-          <p class="eyebrow">The other useful details</p>
-          <h2 id="about-title">A bit about me<span>:</span></h2>
+          <p class="eyebrow">Beyond the code</p>
+          <h2 id="about-title">About me<span>:</span></h2>
+          <p class="about-copy">
+            I’m drawn to backend problems where reliability and scale matter.
+            I enjoy tracing a slow or fragile flow back to its cause, then
+            making it simpler for customers and the teams maintaining it.
+          </p>
         </div>
-        <div class="about-details">
-          <div>
-            <h3>Things I use</h3>
-            <p><strong>Languages</strong><br>Java, C++, Python, C#, SQL, JavaScript</p>
-            <p><strong>Frameworks</strong><br>Spring Boot, Dropwizard, .NET Core, Node.js, React</p>
-            <p><strong>Systems & tools</strong><br>Aerospike, Redis, PostgreSQL, Elasticsearch, HBase, Kafka, Docker, Kubernetes, GitHub Actions, AWS</p>
-          </div>
-          <div class="education-note">
-            <h3>Where I studied</h3>
-            <p>Punjab Engineering College</p>
-            <span>B.Tech, Electronics & Communication<br>Minor in Computer Science · CGPA 8.04/10</span>
-            <span>Chandigarh · 2019–2023</span>
-          </div>
+        <div class="education-note">
+          <p class="eyebrow">Education</p>
+          <h3>Punjab Engineering College</h3>
+          <p>B.Tech in Electronics &amp; Communication</p>
+          <span>Minor in Computer Science · CGPA 8.04/10</span>
+          <span>Chandigarh · 2019–2023</span>
         </div>
       </section>
 
-      <section class="letter-section" id="letter" aria-labelledby="letter-title">
-        <div class="section-wrap letter-layout">
-          <div class="letter-intro">
-            <p class="eyebrow">For your next application</p>
-            <h2 id="letter-title">A cover letter,<br>from me to you.</h2>
-            <p>
-              Pop in a role and company to make this note yours. Copy it or
-              print it as a PDF when you’re ready.
-            </p>
-            <div class="letter-controls">
-              <label>
-                <span>ROLE</span>
-                <input id="role-input" type="text" maxlength="80" placeholder="e.g. Backend Engineer">
-              </label>
-              <label>
-                <span>COMPANY</span>
-                <input id="company-input" type="text" maxlength="100" placeholder="e.g. Acme">
-              </label>
-            </div>
-            <div class="letter-actions">
-              <button class="button button-light" id="copy-letter" type="button">Copy letter <span aria-hidden="true">↗</span></button>
-              <button class="print-button" id="print-letter" type="button">Print / Save PDF</button>
-              <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
-            </div>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-wrap">
+          <div class="contact-heading">
+            <p class="eyebrow">There’s a way to reach me</p>
+            <h2 id="contact-title">Let’s connect<span>:</span></h2>
+            <p>Whether you’re hiring or looking for guidance, I’d be glad to hear from you.</p>
           </div>
-          <article class="letter-paper" aria-label="Personalized cover letter">
-            <div class="letter-paper-top">
-              <span>A NOTE FROM MINEESHA</span>
-              <span id="letter-date"></span>
-            </div>
-            <div class="letter-body" id="letter-body">
-              <p>Dear Hiring Team,</p>
-              <p>
-                I’m a backend engineer with 3+ years of experience at PhonePe
-                and JPMorganChase. I’m getting in touch about the
-                <span class="role-slot">backend engineering</span> role at
-                <span class="company-slot">your company</span>.
-              </p>
-              <p>
-                At PhonePe, I work on insurance services handling more than
-                450,000 daily quote requests. I’ve built a discounting library,
-                helped improve health insurance conversion by 5%, and helped
-                cut quote-flow P99 latency in half. Before that, at
-                JPMorganChase, I built Kafka notifications and internal
-                automations that saved developers more than 10 hours a week
-                and made incident response much faster.
-              </p>
-              <p>
-                I enjoy working on the parts of software that make everything
-                else feel dependable: thoughtful service design, useful
-                automation, and careful attention to performance. I’d love to
-                bring that experience to <span class="company-slot">your company</span>.
-              </p>
-              <p>Thanks for reading. I’d be glad to tell you more about the work.</p>
-              <p class="letter-signoff">Best,<br><strong>Mineesha</strong></p>
-              <a class="letter-contact" href="mailto:mineesha6644@gmail.com">mineesha6644@gmail.com</a>
-            </div>
-          </article>
+          <div class="contact-options">
+            <article class="contact-card">
+              <p class="eyebrow">For recruiters</p>
+              <h3>Let’s talk about opportunities.</h3>
+              <p>If you’re hiring for a backend engineering role, get in touch by email.</p>
+              <a class="contact-cta" href="mailto:mineesha6644@gmail.com?subject=Backend%20engineering%20opportunity">
+                Email me <span aria-hidden="true">↗</span>
+              </a>
+              <a class="contact-email" href="mailto:mineesha6644@gmail.com">mineesha6644@gmail.com</a>
+            </article>
+            <article class="contact-card">
+              <p class="eyebrow">For anyone looking for guidance</p>
+              <h3>A free one-on-one session.</h3>
+              <p>If you’d like some guidance, I’m happy to make time for a free session.</p>
+              <a
+                class="contact-cta"
+                href="mailto:mineesha6644@gmail.com?subject=Free%20guidance%20session&amp;body=Hi%20Mineesha%2C%0A%0AI%27d%20love%20to%20book%20a%20free%20guidance%20session.%20I%27d%20like%20to%20talk%20about%3A%0A%0ATimes%20that%20work%20for%20me%3A%0A"
+              >
+                Book a free session <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </div>
         </div>
       </section>
     </main>
